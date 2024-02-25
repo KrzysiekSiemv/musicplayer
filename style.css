@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -130,3 +130,20 @@ body {
 #player {
     display: none;
 }
+
+.author {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+    .author a:hover {
+        text-decoration: underline;
+    }
