@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Krzysztof 'KrzysiekSiemv' Smaga">
+    <meta name="application-name" content="Songer - UI">
+    
+    <script src="https://kit.fontawesome.com/e4c3899c65.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Songer</title>
+</head>
+<body class="body">
+    <div class="container">
+        <img src="resources/img/noalbum.jpg" id="song_coverart" alt="noalbum" height="400px">
+        <h2 id="song_title">Sample Title</h3>
+        <h5 id="song_author">John Krasinski</h5>
+        <div class="status">
+            <span id="time_playing">0:00</span>
+            <input type="range" name="time_playingbar" id="time_playingbar">
+            <span id="song_length">3:00</span>
+        </div>
+        <div class="controls">
+            <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+            <button id="back"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="backward"><i class="fa-solid fa-backward"></i></button>
+            <button id="play"><i id="play_icon" class="fa-solid fa-play"></i></button>
+            <button id="forward"><i class="fa-solid fa-forward"></i></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+            <button id="list"><i class="fa-solid fa-list"></i></button>
+        </div>
+        <audio src="" id="player" controls></audio>
+        <p>Stworzone przez <a href="https://smaga.me" style="color: white;">Krzysztof Smaga</a></p>
+    </div>
+    <div class="list" style="display: none;">
+        <h3>Twoja lista odtwarzania</h3>
+        <ul id="song_list">
+        </ul>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

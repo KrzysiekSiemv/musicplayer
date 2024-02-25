@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body {
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(120px);
+}
+
+.container {
+    padding: 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+    .controls button {
+        color: white;
+        border: none;
+        font-size: 32px;
+        padding: 8px;
+        background-color: transparent;
+    }
+
+        .controls button:hover {
+            color: green;
+        }
+
+.list {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    border-radius: 0 8px 8px 0;
+    padding: 16px;
+    color: white;
+    width: 25%;
+}
+
+    .list ul {
+        padding: 0;
+    }
+
+        .list ul li {
+            list-style-type: none;
+            padding: 8px 4px;
+            border-bottom: 1px solid white;
+        }
+
+            .list ul li.playing {
+                background-color: rgba(255, 255, 255, 0.4);
+            }
+
+            .list ul li:hover {
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+
+.open-list, .repeat-on {
+    color: green;
+}
+
+#player {
+    display: none;
+}
