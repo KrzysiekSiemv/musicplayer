@@ -25,12 +25,7 @@ body {
     .container {
         width: 90vw;
         padding: 16px;
-        border-radius: 8px;
-        border: 1px solid rgba(0,0,0,0.2);
-        box-shadow: 0 0 8px rgba(0,0,0,0.6);
-        background-color: rgba(0,0,0,0.5);
-        color: white;
-        text-align: center;
+        border-radius: 8px 8px 0 0;
     }
 
     img {
@@ -39,7 +34,6 @@ body {
 
     .list {
         border-radius: 0 0 8px 8px;
-        padding: 16px;
         width: 90vw;
     }
 
@@ -65,11 +59,7 @@ body {
     }
 
     .list {
-        background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 4px rgba(0,0,0,0.6);
         border-radius: 0 8px 8px 0;
-        padding: 16px;
-        color: white;
         width: 25%;
     }
 
@@ -79,8 +69,6 @@ body {
 }
 
 .container {
-    padding: 32px;
-    border-radius: 8px;
     border: 1px solid rgba(0,0,0,0.2);
     box-shadow: 0 0 8px rgba(0,0,0,0.6);
     background-color: rgba(0,0,0,0.5);
@@ -109,6 +97,13 @@ body {
         .controls button:hover {
             color: green;
         }
+        
+.list {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    padding: 16px;
+    color: white;
+}
 
     .list ul {
         padding: 0;
